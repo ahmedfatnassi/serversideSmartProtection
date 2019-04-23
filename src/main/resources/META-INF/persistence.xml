@@ -8,10 +8,6 @@
     <persistence-unit name="local" transaction-type="RESOURCE_LOCAL">
         <description>My Persistence Unit</description>
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
-        <mapping-file>AdminEntity.xml</mapping-file>
-        <mapping-file>CitizenEntity.xml</mapping-file>
-
-
         <class>models.AdminEntity</class>
         <class>models.CitizenEntity</class>
 

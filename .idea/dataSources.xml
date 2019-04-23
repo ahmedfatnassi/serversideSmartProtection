@@ -15,7 +15,7 @@
 
 /home/ahmed/IdeaProjects/CivilSmartProtection/src/main/resources/META-INF/persistence.xml</remarks>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql://localhost:5432/protection</jdbc-url>
+      <jdbc-url>jdbc:postgresql://localhost:5432/local/hibernate</jdbc-url>
     </data-source>
   </component>
 </project>

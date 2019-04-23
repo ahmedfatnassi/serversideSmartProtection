@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dataSource name="local/Hibernate">
-  <database-model serializer="dbm" dbms="POSTGRES" family-id="POSTGRES" format-version="4.14">
+  <database-model serializer="dbm" dbms="POSTGRES" family-id="POSTGRES" format-version="4.15">
     <root id="1">
       <ServerVersion>10.5</ServerVersion>
     </root>
@@ -75,8 +75,8 @@ sequence|table|16544|16546|1
       <CreateRole>1</CreateRole>
       <CreateDb>1</CreateDb>
       <CanLogin>1</CanLogin>
-      <Replication>1</Replication>
       <ConnectionLimit>-1</ConnectionLimit>
+      <Replication>1</Replication>
       <BypassRls>1</BypassRls>
     </role>
     <schema id="14" parent="5" name="information_schema">
@@ -173,16 +173,16 @@ sequence|table|16544|16546|1
     </extension>
     <sequence id="27" parent="19" name="admin_id_seq">
       <ObjectId>16544</ObjectId>
-      <Owner>ahmedfatnassi</Owner>
       <StateNumber>822</StateNumber>
+      <Owner>ahmedfatnassi</Owner>
       <SequenceIdentity>1..2147483647</SequenceIdentity>
       <CacheSize>1</CacheSize>
       <DataType>integer</DataType>
     </sequence>
     <sequence id="28" parent="19" name="citizen_id_seq">
       <ObjectId>16535</ObjectId>
-      <Owner>ahmedfatnassi</Owner>
       <StateNumber>817</StateNumber>
+      <Owner>ahmedfatnassi</Owner>
       <SequenceIdentity>1..2147483647</SequenceIdentity>
       <CacheSize>1</CacheSize>
       <DataType>integer</DataType>
@@ -242,8 +242,8 @@ sequence|table|16544|16546|1
       <ObjectId>16552</ObjectId>
       <StateNumber>824</StateNumber>
       <ColNames>id</ColNames>
-      <UnderlyingIndexName>admin_pk</UnderlyingIndexName>
       <Primary>1</Primary>
+      <UnderlyingIndexName>admin_pk</UnderlyingIndexName>
     </key>
     <column id="38" parent="30" name="id">
       <Position>1</Position>
@@ -341,8 +341,8 @@ sequence|table|16544|16546|1
       <ObjectId>16543</ObjectId>
       <StateNumber>819</StateNumber>
       <ColNames>id</ColNames>
-      <UnderlyingIndexName>citizen_pk</UnderlyingIndexName>
       <Primary>1</Primary>
+      <UnderlyingIndexName>citizen_pk</UnderlyingIndexName>
     </key>
   </database-model>
 </dataSource>

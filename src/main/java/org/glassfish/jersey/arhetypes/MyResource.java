@@ -1,7 +1,7 @@
 package org.glassfish.jersey.arhetypes;
 
+
 import models.AdminEntity;
-import models.CitizenEntity;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
@@ -14,7 +14,7 @@ import javax.ws.rs.core.MediaType;
 /**
  * Root resource (exposed at "myresource" path)
  */
-@Path("he")
+@Path("myresource")
 public class MyResource {
 
     /**
@@ -26,7 +26,7 @@ public class MyResource {
     @GET
     @Produces(MediaType.APPLICATION_JSON)
     public AdminEntity getIt() {
-       /* System.out.println("1");
+        System.out.println("1");
         EntityManagerFactory emfactory = Persistence.createEntityManagerFactory( "local" );
         System.out.println("2");
         EntityManager entitymanager = emfactory.createEntityManager( );
@@ -34,22 +34,22 @@ public class MyResource {
         entitymanager.getTransaction( ).begin( );
 
         System.out.println("4");
-        AdminEntity Citizen = new AdminEntity();
-        Citizen.setPassword("0000");
-        Citizen.setName("ahmed");
-        Citizen.setName("fatnassi");
+        AdminEntity admin = new AdminEntity();
+        admin.setPassword("0000");
+        admin.setName("lkjln");
+        admin.setId(1);
+        admin.setCin("7218492");
 
 
-        entitymanager.persist(Citizen);
+        entitymanager.persist(admin);
         entitymanager.getTransaction().commit();
         System.out.println("created succefully ");
         /*User user2 = entitymanager.find( User.class,1);
-        System.out.println("yyyyyyyyyyeaahhh "+user2.getEmail());
+        System.out.println("yyyyyyyyyyeaahhh "+user2.getEmail());*/
         entitymanager.close( );
-        emfactory.close( );*/
-        AdminEntity Citizen = new AdminEntity();
+        emfactory.close( );
 
-        return Citizen ;
+        return admin ;
 
     }
 

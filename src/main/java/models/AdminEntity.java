@@ -8,10 +8,10 @@ public class AdminEntity {
     private int id;
     private String name;
     private String password;
-    private int cin;
+    private String cin;
 
     @Id
-    @Column(name = "id", nullable = false)
+    @Column(name = "id")
     public int getId() {
         return id;
     }
@@ -21,7 +21,7 @@ public class AdminEntity {
     }
 
     @Basic
-    @Column(name = "name", nullable = false, length = 80)
+    @Column(name = "name")
     public String getName() {
         return name;
     }
@@ -31,7 +31,7 @@ public class AdminEntity {
     }
 
     @Basic
-    @Column(name = "password", nullable = false, length = 80)
+    @Column(name = "password")
     public String getPassword() {
         return password;
     }
@@ -41,12 +41,12 @@ public class AdminEntity {
     }
 
     @Basic
-    @Column(name = "cin", nullable = false)
-    public int getCin() {
+    @Column(name = "cin")
+    public String getCin() {
         return cin;
     }
 
-    public void setCin(int cin) {
+    public void setCin(String cin) {
         this.cin = cin;
     }
 
@@ -58,9 +58,9 @@ public class AdminEntity {
         AdminEntity that = (AdminEntity) o;
 
         if (id != that.id) return false;
-        if (cin != that.cin) return false;
         if (name != null ? !name.equals(that.name) : that.name != null) return false;
         if (password != null ? !password.equals(that.password) : that.password != null) return false;
+        if (cin != null ? !cin.equals(that.cin) : that.cin != null) return false;
 
         return true;
     }
@@ -70,7 +70,7 @@ public class AdminEntity {
         int result = id;
         result = 31 * result + (name != null ? name.hashCode() : 0);
         result = 31 * result + (password != null ? password.hashCode() : 0);
-        result = 31 * result + cin;
+        result = 31 * result + (cin != null ? cin.hashCode() : 0);
         return result;
     }
 }
