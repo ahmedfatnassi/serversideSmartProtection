@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+        version="2.0">
+
+    <entity class="models.AdminEntity">
+        <table name="admin" schema="public" catalog="protection"/>
+        <attributes>
+            <id name="id">
+                <column name="id" precision="-1"/>
+            </id>
+            <basic name="name">
+                <column name="name" length="80"/>
+            </basic>
+            <basic name="password">
+                <column name="password" length="80"/>
+            </basic>
+            <basic name="cin">
+                <column name="cin" precision="-1"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

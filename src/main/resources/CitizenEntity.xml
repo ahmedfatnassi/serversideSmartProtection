@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+        version="2.0">
+
+    <entity class="models.CitizenEntity">
+        <table name="citizen" schema="public" catalog="protection"/>
+        <attributes>
+            <id name="id">
+                <column name="id" precision="-1"/>
+            </id>
+            <basic name="name">
+                <column name="name" nullable="false" length="50"/>
+            </basic>
+            <basic name="firstname">
+                <column name="firstname" nullable="false" length="50"/>
+            </basic>
+            <basic name="cin">
+                <column name="cin" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="location">
+                <column name="location" nullable="false" length="100"/>
+            </basic>
+            <basic name="phonenum">
+                <column name="phonenum" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="email">
+                <column name="email" nullable="false" length="80"/>
+            </basic>
+            <basic name="phonenum2">
+                <column name="phonenum2" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="numberfamilly">
+                <column name="numberfamilly" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="neighborNumphone">
+                <column name="neighbor_numphone" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="numsocialsecurity">
+                <column name="numsocialsecurity" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="locationsize">
+                <column name="locationsize" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="nearstHydrant">
+                <column name="nearst_hydrant" nullable="false" precision="-1"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>
