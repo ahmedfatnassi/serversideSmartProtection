@@ -1,10 +1,13 @@
 package models;
 
 import javax.persistence.*;
+import javax.xml.bind.annotation.XmlRootElement;
+import java.io.Serializable;
 
 @Entity
 @Table(name = "citizen", schema = "public", catalog = "protection")
-public class CitizenEntity {
+@XmlRootElement
+public class CitizenEntity implements Serializable {
     private int id;
     private String lastname;
     private String firstname;

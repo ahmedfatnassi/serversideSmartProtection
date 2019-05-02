@@ -1,9 +1,11 @@
 package models;
 
 import javax.persistence.*;
+import javax.xml.bind.annotation.XmlRootElement;
 
 @Entity
 @Table(name = "admin", schema = "public", catalog = "protection")
+@XmlRootElement
 public class AdminEntity {
     private int id;
     private String name;
